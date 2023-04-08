@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Gerald Scarfe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <a id="home_page_logo" href="index.html" alt="Gerald Scarfe"><img src="img/gs_logo.png" width="560" height="250"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <div class="nav_divider"></div>
+                    <li><a href="about.html">about</a></li>
+                    <div class="nav_divider"></div>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <div class="nav_divider"></div>
+                    <li><a href="books.html">books</a></li>
+                    <div class="nav_divider"></div>
+                    <li><a href="contact.html"><span class="current_page">contact</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <div id="main_contact">
+                <form action="link.php">
+                    <img class="float_right" src="img/gerald_scarfe_form.jpg" width="150">
+                    <p id="txt_send_msg">Send a message</p>
+                    <p>Name:</p>
+                    <input type="text" id="name" class="form_input">
+                    <p>E-mail:</p>
+                    <input type="email" id="email" class="form_input">
+                    <p>Subject:</p>
+                    <input type="subject" id="subject" class="form_input">
+                    <textarea rows="25" cols="87" name="message">
+                        Enter message here...
+                    </textarea>
+                    <input id="contact_submit" type="submit" value="Send">
+                </form>
+    
+                <img class="divider" src="img/divider.png" width="1200" height="25">
+                
+                <div id="contact">
+                    <div id="contact_info">
+                        <h2>Contact info:</h2>
+                        <p>Campus Grotesteenweg</p>
+                        <p>Grotesteenweg 224-226</p>
+                        <p>2600 Berchem (Antwerpen)</p>
+                        <p>T 03 334 34 34</p>
+                        <p><script src="js_lib/mask_mail.js"></script></p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500.665034933293!2d4.425156615528636!3d51.188396441798375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f7305b91749f%3A0x4712edf928351157!2sGrotesteenweg%20224%2C%202600%20Antwerpen!5e0!3m2!1snl!2sbe!4v1653167167461!5m2!1snl!2sbe"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <img src="img/footer.png" width="1200" height="120">
+            <div id="socials">
+                <div id="social_be_bgi">
+                    <a href="https://www.geraldscarfe.com/"><img src="img/be_logo.png" width="240" height="240"></a>
+                </div>
+
+                <div class="footer_divider"></div>
+                <div id="social_fb_bgi">
+                    <a href="https://www.facebook.com/thegeraldscarfe/"><img src="img/fb_logo.png" width="240" height="240"></a>
+                </div>
+
+                <div class="footer_divider"></div>
+                <div id="social_tw_bgi">
+                    <a href="https://twitter.com/geraldscarfe"><img src="img/tw_logo.png" width="240" height="240"></a>
+                </div>
+
+            </div>
+            <h5 id="copyright"></h5>
+
+        </footer>
+        <script src="js_lib/copyright.js"></script>
+        </footer>
+    </div>
+</body>
+
+</html>

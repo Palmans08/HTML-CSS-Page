@@ -1,0 +1,374 @@
+/**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+body {
+    background-color: #E0D3AF;
+    background-image: linear-gradient(to bottom right, #fff8e6, #E0D3AF); /*if browser support*/
+}
+
+#container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 5px 5px 8px #333, 10px 10px 8px rgba(51, 51, 51, 0.493), 15px 15px 8px rgba(51, 51, 51, 0.055);
+}
+
+/*HEADER*/
+header {
+    background-image: url("../img/sky_header.png");
+    display: flex;
+    height: 500px;
+}
+#home_page_logo {
+    margin: 64px 0 180px 64px;
+}
+nav{
+    padding: 210px 0 0 120px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+}
+
+.nav_divider {
+    width: 2px;
+    height: 28px;
+    transform: rotate(20deg);
+    background-color: #000;
+}
+
+nav ul a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    line-height: 24px;
+    font-size: 24px;
+    font-style: italic;
+    text-shadow: 1px 1px #000;
+    cursor: pointer;
+}
+.current_page{
+    color: #c50d19;
+    text-shadow: 1px 1px #c50d19;
+}
+
+/*animation line-through*/
+nav ul a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0px;
+    background-color: #c50d19;
+}
+
+nav ul a::after {
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease;
+}
+
+nav ul a:hover::after {
+    transform: scale(1, 1);
+}
+
+/*MAIN*/
+main {
+    margin: 0 64px;
+}
+h1,
+h2 {
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 4px;
+    color: #c50d19;
+    text-transform: uppercase;
+}
+
+strong{
+    color: #c50d19;
+}
+/*HOME PAGE*/
+#main_index p,
+#main_about p,
+#main_books p{
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+.home_page_flex {
+    display: flex;
+    margin-bottom: 120px;
+}
+#home_page p {
+    margin-bottom: 24px;
+}
+
+#introduction {
+    margin-left: 36px;
+}
+#introduction p{
+    font-size: 22px;
+}
+
+#early_life {
+    margin-right: 24px;
+}
+
+#awards {
+    margin-left: 24px;
+}
+
+#home_page_quote_flex {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+}
+
+.quotes_box {
+    width: 536px;
+    height: 800px;
+}
+
+.quotes_box p {
+    /*margin-top: 64px;*/
+    text-align: center;
+    padding: 0 120px;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 42px;
+    font-style: italic;
+}
+
+.quote1 {
+    background-color: #dce1db;
+    color: #c50d19;
+    background-image: url(../img/border_01.png);
+}
+
+.quote2 {
+    background-color: #c50d19;
+    background-image: url(../img/border_02.png);
+}
+
+.quotes_begin {
+    padding: 120px 0 0 64px;
+    font-size: 64px;
+}
+
+.quotes_end {
+    padding: 0 64px 0 80px;
+    font-size: 64px;
+    transform: rotate(180deg);
+}
+
+/*ABOUT*/
+.about_flex {
+    display: flex;
+}
+
+#about p {
+    margin-bottom: 36px;
+}
+
+#img_roger {
+    margin: 0 0 36px 36px;
+}
+
+#img_hades {
+    margin-right: 36px;
+}
+
+.hades p {
+    padding: 0 64px 0 0;
+}
+
+#img_post_stamp {
+    margin: 0 140px 0 36px;
+}
+
+#img_design {
+    margin-right: 36px;
+}
+
+#img_heroes {
+    margin: 0 100px 0 36px;
+}
+
+#img_netanyahu {
+    margin-left: 36px;
+}
+
+#img_radio {
+    margin: 0 36px 0 120px;
+}
+
+#radio_txt {
+    margin-right: 120px;
+}
+
+#img_char {
+    margin-left: 36px;
+}
+/*BOOKS*/
+.book_box {
+    display: flex;
+}
+.book_properties{
+    margin-left: 64px;
+}
+.book_properties p {
+    margin-bottom: 24px;
+    margin-right: 120px;
+}
+
+.book_properties a {
+    font-size: 24px;
+    color: #c50d19;
+}
+/*GALLERY*/
+.gallery_layout p {
+    text-align: center;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+}
+
+.gallery_layout div {
+    width: 330px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+/*CONTACT PAGE*/
+form {
+    border: 1px solid #000;
+    box-shadow: 5px 5px 8px #333, 10px 10px 8px rgba(51, 51, 51, 0.493), 15px 15px 8px rgba(51, 51, 51, 0.055);
+    margin: 24px 150px 24px 150px;
+    padding: 64px 64px;
+    background-color: #fbf7ed;
+    font-size: 24px;
+}
+
+form img {
+    padding-bottom: 64px;
+}
+
+#txt_send_msg{
+    padding-bottom: 24px;
+    color: #c50d19;
+}
+
+.form_input {
+    margin-bottom: 24px;
+    padding-right: 24px;
+    font-size: 24px;
+}
+
+#contact {
+    margin: 240px 120px 240px 42px;
+    display: flex;
+}
+
+#contact_info p {
+    padding-bottom: 24px;
+    margin-right: 64px;
+    font-size: 32px;
+}
+
+#contact_submit {
+    padding: 24px 84px;
+    margin: 42px 0 64px 420px;
+    background-color: #000;
+    color: #c50d19;
+    font-size: 24px;
+    border-radius: 24px;
+}
+
+iframe {
+    /*filter: invert(100%);*/
+    box-shadow: 5px 5px 8px #333, 10px 10px 8px rgba(51, 51, 51, 0.493), 15px 15px 8px rgba(51, 51, 51, 0.055);
+}
+/*FOOTER*/
+footer {
+    color: #fff;
+    margin-bottom: 64px;
+    margin-top: 120px;
+}
+
+.footer_divider {
+    width: 2px;
+    height: 120px;
+    transform: rotate(20deg);
+    background-color: #fff;
+    margin-top: 80px;
+}
+
+#socials {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px;
+}
+
+#social_be_bgi {
+    background-image: url("../img/be_bgi.png");
+}
+#social_fb_bgi {
+    background-image: url("../img/fb_bgi.png");
+}
+#social_tw_bgi {
+    background-image: url("../img/tw_bgi.png");
+}
+
+#socials img {
+    filter: brightness(0%);
+    
+}
+#socials img:hover {
+    filter: brightness(100%);
+    transition: .4s;
+}
+
+#copyright {
+    padding: 0 24px 24px 0;
+    font-weight: normal;
+}
+
+#socials,
+#copyright {
+    background-color: #000;
+    text-align: right;
+}
+
+.float_right {
+    float: right;
+}
+
+.divider {
+    margin-bottom: 120px;
+    margin-top: 120px;
+}
+
+.border_left{
+    border-left: 3px solid #c50d19;
+    padding: 0 35px 0 32px;
+}
+.border_mid{
+    border-left: 3px solid #c50d19;
+    border-right: 3px solid #c50d19;
+    padding: 0 29px 0 29px;
+}
+.border_right{
+    border-right: 3px solid #c50d19;
+    padding: 0 32px 0 35px;
+}
